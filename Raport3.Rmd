@@ -60,8 +60,8 @@ Powinien pojawić się numer wersji. Jeśli polecenie nie działa, sprawdź, czy
 W tym samym terminalu wykonaj dwa polecenia, **wpisując własne dane**. E-mail powinien być zgodny z adresem dodanym do konta GitHub; możesz użyć także adresu `noreply` podanego w ustawieniach GitHub, jeśli chcesz chronić prywatność.
 
 ```{bash git-tozsamosc, eval=FALSE}
-git config --global user.name "Imie Nazwisko"
-git config --global user.email "twoj-adres@example.com"
+git config --global user.name Martyna Andraka
+git config --global user.email martynk@andraka@gmail.com
 ```
 
 Sprawdź konfigurację:
