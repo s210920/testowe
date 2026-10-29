@@ -262,6 +262,11 @@ Sprawdź liczbę respondentów w obu grupach. Samo porównanie procentów bez li
 # WASZE ROZWIĄZANIE
 # filter(...), count(miejscowosc, kierunek), group_by(miejscowosc)
 
+library(dplyr)
+dane %>%
+  filter(miejscowosc %in% c("wieś", "miasto 500 000 i więcej")) %>%
+  count(miejscowosc, kierunek) %>%
+  group_by(miejscowosc) %>%
 ```
 
 ### Zadanie 8 — ocena teraźniejszości a oczekiwania
@@ -271,6 +276,15 @@ Zrób tabelę liczności odpowiedzi na `prognoza`. Następnie ogranicz dane do o
 ```{r cbos-zad-8}
 # WASZE ROZWIĄZANIE
 # filter(kierunek == "W złym"), count(prognoza, sort = TRUE)
+
+# Tabela liczności odpowiedzi na prognoza
+dane %>%
+  count(prognoza, sort = TRUE)
+
+# Odpowiedzi osób oceniających sytuację w kraju jako "W złym"
+dane %>%
+  filter(kierunek == "W złym") %>%
+  count(prognoza, sort = TRUE)
 
 ```
 
