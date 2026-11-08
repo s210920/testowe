@@ -408,7 +408,9 @@ dane %>%
 
 
 ```{r 34, eval=FALSE}
-# miejsce na kod
+# miejsce na kod, LIDER WPISUJE - robi chunka, folder
+ch1 <- source("./Zadanie/Zadanie2.R")
+print(ch1)
 ```
 
 
